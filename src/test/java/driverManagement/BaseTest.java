@@ -25,6 +25,7 @@ public class BaseTest {
 	public void setUp()
 	{
 		ChromeOptions options = new ChromeOptions();
+		options.setBinary("/usr/bin/chromedriver");
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("disable-gpu");
