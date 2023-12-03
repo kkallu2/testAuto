@@ -26,6 +26,8 @@ public class BaseTest {
 	{
 		System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/SeleniumMaven/driver/chromedriver");
 		ChromeOptions options = new ChromeOptions();
+		 options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--headless=new");
 
          driver = new ChromeDriver(options);
