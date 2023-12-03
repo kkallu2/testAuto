@@ -24,6 +24,7 @@ public class BaseTest {
 	@BeforeMethod
 	public void setUp()
 	{
+		WebDriverManager.chromiumdriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.setBinary("/usr/bin/chromedriver");
 		options.addArguments("--no-sandbox");
