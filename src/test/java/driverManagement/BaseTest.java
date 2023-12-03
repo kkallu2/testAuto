@@ -24,7 +24,7 @@ public class BaseTest {
 	@BeforeMethod
 	public void setUp()
 	{
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+File.separator+"driver"+File.separator+"chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+File.separator+"driver"+File.separator+"chromedriver");
 		ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless=new");
 
