@@ -24,7 +24,7 @@ public class BaseTest {
 	@BeforeMethod
 	public void setUp()
 	{
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+File.separator+"driver"+File.separator+"chromedriver");
+		System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/SeleniumMaven/driver");
 		ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless=new");
 
