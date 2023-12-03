@@ -44,7 +44,7 @@ public class BaseTest {
 		ele.sendKeys(Keys.ENTER);
 		ele.sendKeys("chemistry");
 		ele.sendKeys(Keys.ENTER);
-
+                driver.quit();
 	}
 
 
