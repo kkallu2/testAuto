@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>	
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="iSelect">
+	
+
+	<test name="iSelect Smoke Testing">
+		
+		<classes>
+			<class name="driverManagement.BaseTest">
+			</class> <!-- com.iselect.tests.GlobalHomePageTest -->
+		</classes>
+	</test>
+</suite>	
