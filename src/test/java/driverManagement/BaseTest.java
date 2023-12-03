@@ -1,6 +1,8 @@
 package driverManagement;
 
+
 import java.io.File;
+
 import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.By;
@@ -10,7 +12,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.locators.RelativeLocator;
+
 import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.Test;
 
 public class BaseTest {
@@ -26,11 +30,12 @@ public class BaseTest {
 
          driver = new ChromeDriver(options);
 	}
+
 	
 	@Test
 	public void testform()
 	{
-		
+
 		driver.get("https://demoqa.com/automation-practice-form");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
@@ -39,7 +44,7 @@ public class BaseTest {
 		ele.sendKeys(Keys.ENTER);
 		ele.sendKeys("chemistry");
 		ele.sendKeys(Keys.ENTER);
-		driver.quit();
+
 	}
 
 
