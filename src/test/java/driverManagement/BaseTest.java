@@ -25,15 +25,15 @@ public class BaseTest {
 	@BeforeMethod
 	public void setUp()
 	{
-		WebDriverManager.chromiumdriver().setup();
+		
 		ChromeOptions options = new ChromeOptions();
 		options.setBinary("/usr/bin/chromedriver");
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("disable-gpu");
 		options.addArguments("headless");
-
-		driver = new ChromeDriver(options);
+                driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+		//driver = new ChromeDriver(options);
 
 	}
 
